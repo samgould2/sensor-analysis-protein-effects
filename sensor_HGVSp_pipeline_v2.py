@@ -151,7 +151,7 @@ def edit_classifier(a, gRNA_id, cdks, master_df, EDITOR):
 
 #--------and then iterate over the mastertable----------
 
-fp = './crispresso3'
+fp = './crispresso'
 
 rows = []
 for i, val in master_df.iterrows():
@@ -178,4 +178,4 @@ for i, val in master_df.iterrows():
     
 #and then concatenate and output it
 combined = pd.concat(rows).reset_index(drop=True)
-combined.to_csv(f"./crispresso3/{sample_name}_HGVSp_sensor_quant_v2.csv", index=False)
+combined.to_csv(f"./crispresso/{sample_name}_HGVSp_sensor_quant_v2.csv", index=False)

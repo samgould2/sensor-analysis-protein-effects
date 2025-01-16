@@ -28,4 +28,4 @@ folder_name=$(awk -v ArrayTaskID=$SLURM_ARRAY_TASK_ID '$1==ArrayTaskID {print $4
 
 EDITOR='CBE'
 
-python3 sensor_HGVSp_pipeline_v2.py master_df_HGVSp_quant_pool1_v2.csv cdks_info_updated.csv ${EDITOR} ${folder_name}
+python3 sensor_HGVSp_pipeline_v2.py IDR_library_master_df_no_error.csv IDR_library_gene_info.csv ${EDITOR} ${folder_name}
